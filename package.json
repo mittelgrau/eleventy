@@ -1,0 +1,21 @@
+{
+    "name": "mittelgrau-starterkit",
+    "version": "1.0.0",
+    "main": "./src/index.js",
+    "license": "MIT",
+    "scripts": {
+        "dev": "parcel watch ./src/index.js --out-dir ./assets --public-url .",
+        "build": "node helper/resizeImages.js && eleventy build && parcel build ./src/index.js --out-dir ./assets --public-url . --no-cache && eleventy build",
+        "eleventy": "eleventy --serve --quiet"
+    },
+    "devDependencies": {
+        "@11ty/eleventy": "^0.7.1",
+        "fast-glob": "^2.2.6",
+        "parcel-bundler": "^1.12.2",
+        "parcel-plugin-purgecss": "^2.1.0",
+        "rename": "^1.0.4",
+        "sharp": "^0.21.3",
+        "tailwindcss": "^0.7.4"
+    },
+    "dependencies": {}
+}
