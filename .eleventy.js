@@ -3,5 +3,5 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addLiquidFilter("makeUppercase", function (value) {});
     eleventyConfig.addPassthroughCopy("assets");
     eleventyConfig.addPassthroughCopy("media");
-    // You can return your Config object (optional).
+
 };

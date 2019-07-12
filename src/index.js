@@ -1,5 +1,4 @@
 import './index.css';
 
-const hello = 'hi';
-
+const hello = 'Js works';
 alert(hello);
