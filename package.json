@@ -12,12 +12,16 @@
         "@11ty/eleventy": "^0.8.3",
         "autoprefixer": "^9.6.1",
         "fast-glob": "^3.0.4",
+        "html-minifier": "^4.0.0",
         "parcel-bundler": "^1.12.3",
         "parcel-plugin-purgecss": "^2.1.2",
+        "postcss-for": "^2.1.1",
+        "postcss-jsmath": "0.0.83",
+        "postcss-nested-import": "^0.1.0",
         "postcss-preset-env": "^6.7.0",
         "rename": "^1.0.4",
-        "sharp": "^0.22.1",
-        "tailwindcss": "^1.0.5"
+        "sharp": "^0.23.0",
+        "tailwindcss": "^1.1.1"
     },
     "dependencies": {}
 }

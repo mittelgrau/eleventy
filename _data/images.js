@@ -2,7 +2,7 @@ const fg = require('fast-glob');
 const rename = require('rename');
 
 
-const images = fg.sync(['./media/*.png', './media/*.jpg', './media/*.mp4']);
+const images = fg.sync(['./static/*.png', './static/*.jpg', './static/*.mp4']);
 
 const sizes = {
     lazyload: 100,
@@ -29,7 +29,7 @@ images.forEach((img) => {
         });
 
 
-        imgObject[`${size}`] = `media/resized/${imageName}`;
+        imgObject[`${size}`] = `static/resized/${imageName}`;
     }
     imgArr.push(imgObject);
 });
