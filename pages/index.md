@@ -1,3 +1,4 @@
 ---
-permalink: "/"
+permalink: '/'
+layout: default
 ---
