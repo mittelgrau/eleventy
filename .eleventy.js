@@ -19,41 +19,4 @@ module.exports = function (config) {
 
         return content;
     });
-
-    config.addPlugin(pluginLocalRespimg) {
-        folders: {
-            source: 'src',
-            output: 'public',
-        },
-        images: {
-            resize: {
-                min: 250,
-                max: 1500,
-                step: 150
-            },
-            sizes: 100 vw,
-            lazy: true,
-            additional: [
-                'images/icons/**/*'
-            ],
-            watch: {
-                src: 'images/**/*',
-            },
-            pngquant: {
-
-            },
-            mozjpeg: {
-
-            },
-            svgo {
-
-            },
-            gifresize: {
-
-            },
-            webp: {},
-            gifwebp: {}
-        }
-
-    }
 };
