@@ -6,11 +6,12 @@
     "scripts": {
         "dev": "parcel watch ./src/index.js --out-dir ./static --public-url .",
         "serve": "eleventy --serve --quiet",
-        "build": "node helper/resizeImages.js && eleventy build && parcel build ./src/index.js --out-dir ./static --public-url . --no-cache && eleventy build"
+        "build:images": "node helper/resizeImages.js",
+        "build": "eleventy build && parcel build ./src/index.js --out-dir ./static --public-url . --no-cache && eleventy build"
     },
     "devDependencies": {
         "@11ty/eleventy": "^0.10.0",
-        "autoprefixer": "^9.7.4",
+        "autoprefixer": "^9.7.5",
         "cssnano": "^4.1.10",
         "fast-glob": "^3.2.2",
         "html-minifier": "^4.0.0",
@@ -22,7 +23,7 @@
         "postcss-nested-import": "^0.1.0",
         "postcss-preset-env": "^6.7.0",
         "rename": "^1.0.4",
-        "sharp": "^0.25.1",
+        "sharp": "^0.25.2",
         "tailwindcss": "^1.2.0"
     },
     "dependencies": {

@@ -12,11 +12,10 @@ const sizes = {
 
 const isVideo = filename => filename.endsWith('.mp4');
 
-const images = fg.sync(['./media/*.png', './media/*.jpg', './media/*.mp4']);
+const images = fg.sync(['./static/images/*.png', './static/images/*.jpg', './static/images/*.mp4']);
 
 images.forEach(image => {
     for (let size in sizes) {
-
         let screenSize = sizes[size];
         let imageName = rename(image, {
             dirname: '',
@@ -26,7 +25,7 @@ images.forEach(image => {
             sharp(image)
                 .resize(screenSize)
                 .withMetadata()
-                .toFile(`./media/resized/${imageName}`);
+                .toFile(`./static/images/resized/${imageName}`);
         }
     }
 });
