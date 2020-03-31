@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["console","info"],"mappings":";;;AAEA,aAFA,QAAA,eAEAA,QAAQC,KAAK","file":"index.js","sourceRoot":"../src","sourcesContent":["import './index.css';\n\nconsole.info('js works');\n"]}

@@ -1,4 +1,3 @@
-const pluginLocalRespimg = require('eleventy-plugin-local-respimg');
 const htmlmin = require("html-minifier");
 
 module.exports = function (config) {
