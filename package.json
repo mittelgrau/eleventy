@@ -10,22 +10,25 @@
         "build": "eleventy build && parcel build ./src/index.js --out-dir ./static --public-url . --no-cache && eleventy build"
     },
     "devDependencies": {
-        "@11ty/eleventy": "^0.10.0",
-        "autoprefixer": "^9.7.5",
+        "@11ty/eleventy": "^0.11.0",
+        "autoprefixer": "^9.8.0",
         "cssnano": "^4.1.10",
+        "eleventy-plugin-error-overlay": "^0.1.2",
+        "eleventy-plugin-typeset": "^1.0.0",
         "fast-glob": "^3.2.2",
         "html-minifier": "^4.0.0",
         "parcel-bundler": "^1.12.4",
         "parcel-plugin-notifier": "^1.0.0",
         "parcel-plugin-purgecss": "^2.1.3",
+        "postcss-easing-gradients": "^3.0.1",
         "postcss-import": "^12.0.1",
         "postcss-nested": "^4.2.1",
         "postcss-nested-import": "^0.1.0",
         "postcss-preset-env": "^6.7.0",
         "rename": "^1.0.4",
-        "sharp": "^0.25.2",
-        "tailwindcss": "^1.2.0",
-        "tailwindcss-dark-mode": "^1.1.3"
+        "sharp": "^0.25.3",
+        "tailwindcss": "^1.4.6",
+        "tailwindcss-dark-mode": "^1.1.4"
     },
     "dependencies": {}
 }

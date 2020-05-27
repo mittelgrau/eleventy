@@ -1,9 +1,15 @@
 module.exports = {
-  theme: {
-    extend: {}
-  },
-  variants: {},
-  plugins: [
-  	require('tailwindcss-dark-mode')()
-  ]
+    theme: {
+        extend: {
+            screens: {
+                dark: {
+                    raw: '(prefers-color-scheme: dark)',
+                }
+            }
+        }
+    },
+    variants: {},
+    plugins: [
+        require('tailwindcss-dark-mode')()
+    ]
 }
