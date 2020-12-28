@@ -1,15 +1,16 @@
 module.exports = {
-    theme: {
-        extend: {
-            screens: {
-                dark: {
-                    raw: '(prefers-color-scheme: dark)',
-                }
-            }
-        }
-    },
-    variants: {},
-    plugins: [
-        require('tailwindcss-dark-mode')()
-    ]
+  purge: {
+    content: ["./_site/**/*.html", "./_site/*.html"],
+    options: {
+      safelist: [],
+    }
+  },
+  darkMode: 'media', // or 'media' or 'class'
+  theme: {
+    extend: {},
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
 }
